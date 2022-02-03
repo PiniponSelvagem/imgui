@@ -23,10 +23,7 @@ project "ImGui"
     filter "system:windows"
         cppdialect "C++20"
         systemversion "latest"
-
-    filter "system:linux"
-        pic "on"
-        systemversion "latest"
+        staticruntime "on"
 
     filter "configurations:Debug"
         runtime "Debug"
